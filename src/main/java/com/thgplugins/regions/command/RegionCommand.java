@@ -5,6 +5,7 @@ import com.thgplugins.regions.controller.RegionController;
 import com.thgplugins.regions.listener.RegionManageListener;
 import com.thgplugins.regions.manager.InventoryManager;
 import com.thgplugins.regions.provider.RegionManageProvider;
+import com.thgplugins.regions.provider.RegionsProvider;
 import com.thgplugins.regions.util.RegionsConstants;
 import org.bukkit.Location;
 import org.bukkit.command.CommandSender;
@@ -32,6 +33,7 @@ public class RegionCommand extends AbstractCommand{
             return true;
 
         if (args.length == 0){
+            InventoryManager.regionsProvider(new RegionsProvider()).open(player);
             return true;
         }
         if (args[0].equalsIgnoreCase("wand")){

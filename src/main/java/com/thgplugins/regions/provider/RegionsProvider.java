@@ -14,10 +14,7 @@ public class RegionsProvider implements InventoryProvider {
 
     private boolean forceUpdate;
 
-    private final Region region;
-
-    public RegionsProvider(Region region){
-        this.region = region;
+    public RegionsProvider(){
     }
 
     @Override
