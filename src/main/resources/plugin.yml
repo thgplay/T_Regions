@@ -1,0 +1,6 @@
+name: T_Regions
+description: '${project.description}'
+version: '${project.version}'
+main: com.thgplugins.regions.RegionsPlugin
+api-version: 1.17
+authors: [THG]
